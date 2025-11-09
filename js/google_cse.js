@@ -17,23 +17,25 @@
   }
 
   $(document)
-    .on('click', '.navbar-main .search', () => {
-      $('.searchbox').toggleClass('show');
+    .on("click", ".navbar-main .search", () => {
+      $(".searchbox").toggleClass("show");
     })
-    .on('click', '.searchbox .searchbox-mask', () => {
-      $('.searchbox').removeClass('show');
+    .on("click", ".searchbox .searchbox-mask", () => {
+      $(".searchbox").removeClass("show");
     })
-    .on('click', '.searchbox-close', () => {
-      $('.searchbox').removeClass('show');
+    .on("click", ".searchbox-close", () => {
+      $(".searchbox").removeClass("show");
     })
     .on(
-      'keydown',
-      '.searchbox-input',
+      "keydown",
+      ".searchbox-input",
       debounce(function () {
         const value = $(this).val();
         try {
-          const element = google.search.cse.element.getElement('searchresults-only0');
-          if (value.trim() === '') {
+          const element = google.search.cse.element.getElement(
+            "searchresults-only0",
+          );
+          if (value.trim() === "") {
             element.clearAllResults();
           } else {
             element.execute(value);

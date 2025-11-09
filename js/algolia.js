@@ -8,53 +8,53 @@ function loadAlgolia(config, translation) {
 
   search.addWidgets([
     instantsearch.widgets.configure({
-      attributesToSnippet: ['excerpt'],
+      attributesToSnippet: ["excerpt"],
     }),
   ]);
 
   search.addWidget(
     instantsearch.widgets.searchBox({
-      container: '#algolia-input',
+      container: "#algolia-input",
       placeholder: translation.hint,
       showReset: false,
       showSubmit: false,
       showLoadingIndicator: false,
       cssClasses: {
-        root: 'searchbox-input-container',
-        form: 'searchbox-input-container',
-        input: 'searchbox-input',
+        root: "searchbox-input-container",
+        form: "searchbox-input-container",
+        input: "searchbox-input",
       },
     }),
   );
 
   search.addWidget(
     instantsearch.widgets.poweredBy({
-      container: '#algolia-poweredby',
+      container: "#algolia-poweredby",
     }),
   );
 
   search.addWidget(
     instantsearch.widgets.hits({
-      container: '.searchbox-body',
+      container: ".searchbox-body",
       escapeHTML: false,
       cssClasses: {
-        root: 'searchbox-result-container',
-        emptyRoot: ['searchbox-result-item', 'disabled'],
+        root: "searchbox-result-container",
+        emptyRoot: ["searchbox-result-item", "disabled"],
       },
       templates: {
         empty: function (results) {
-          return translation.no_result + ': ' + results.query;
+          return translation.no_result + ": " + results.query;
         },
         item: function (hit) {
-          let title = instantsearch.highlight({ attribute: 'title', hit });
-          let excerpt = instantsearch.highlight({ attribute: 'excerpt', hit });
+          let title = instantsearch.highlight({ attribute: "title", hit });
+          let excerpt = instantsearch.highlight({ attribute: "excerpt", hit });
           title = title ? title : translation.untitled;
           excerpt = excerpt
-            .replace(new RegExp('<em>', 'ig'), '[algolia-highlight]')
-            .replace(new RegExp('</em>', 'ig'), '[/algolia-highlight]')
-            .replace(/(<([^>]+)>)/gi, '')
-            .replace(/(\[algolia-highlight\])/gi, '<em>')
-            .replace(/(\[\/algolia-highlight\])/gi, '</em>');
+            .replace(new RegExp("<em>", "ig"), "[algolia-highlight]")
+            .replace(new RegExp("</em>", "ig"), "[/algolia-highlight]")
+            .replace(/(<([^>]+)>)/gi, "")
+            .replace(/(\[algolia-highlight\])/gi, "<em>")
+            .replace(/(\[\/algolia-highlight\])/gi, "</em>");
           excerpt = excerpt ? excerpt : translation.empty_preview;
           return `<section class="searchbox-result-section">
                         <a class="searchbox-result-item" href="${hit.permalink}">
@@ -71,32 +71,32 @@ function loadAlgolia(config, translation) {
 
   search.addWidget(
     instantsearch.widgets.pagination({
-      container: '.searchbox-footer',
+      container: ".searchbox-footer",
       cssClasses: {
-        list: 'searchbox-pagination',
-        item: 'searchbox-pagination-item',
-        link: 'searchbox-pagination-link',
-        selectedItem: 'active',
-        disabledItem: 'disabled',
+        list: "searchbox-pagination",
+        item: "searchbox-pagination-item",
+        link: "searchbox-pagination-link",
+        selectedItem: "active",
+        disabledItem: "disabled",
       },
     }),
   );
 
   search.start();
 
-  if (location.hash.trim() === '#algolia-search') {
-    $('.searchbox').addClass('show');
+  if (location.hash.trim() === "#algolia-search") {
+    $(".searchbox").addClass("show");
   }
 
   $(document)
-    .on('click', '.navbar-main .search', () => {
-      $('.searchbox').toggleClass('show');
-      $('.searchbox-input').focus();
+    .on("click", ".navbar-main .search", () => {
+      $(".searchbox").toggleClass("show");
+      $(".searchbox-input").focus();
     })
-    .on('click', '.searchbox .searchbox-mask', () => {
-      $('.searchbox').removeClass('show');
+    .on("click", ".searchbox .searchbox-mask", () => {
+      $(".searchbox").removeClass("show");
     })
-    .on('click', '.searchbox-close', () => {
-      $('.searchbox').removeClass('show');
+    .on("click", ".searchbox-close", () => {
+      $(".searchbox").removeClass("show");
     });
 }
