@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><meta><title>Category: Group Theory - Whatever</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="OolongFish"><meta name="msapplication-TileImage" content="/img/icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="OolongFish"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta property="og:type" content="blog"><meta property="og:title" content="Whatever"><meta property="og:url" content="https://oolongfish.github.io/"><meta property="og:site_name" content="Whatever"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://oolongfish.github.io/img/og_image.png"><meta property="article:author" content="OolongFish"><meta property="article:tag" content="mathematical"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://oolongfish.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://oolongfish.github.io"},"headline":"Whatever","image":["https://oolongfish.github.io/img/og_image.png"],"author":{"@type":"Person","name":"OolongFish"},"publisher":{"@type":"Organization","name":"Whatever","logo":{"@type":"ImageObject","url":"https://oolongfish.github.io/img/Patrick.jpeg"}},"description":""}</script><link rel="alternate" href="https://oolongfish.github.io/atom.xml" title="Whatever" type="application/atom+xml"><link rel="icon" href="/img/usagi.jpg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><link rel="stylesheet" href="https://at.alicdn.com/t/c/font_5061503_dwxtc3gbleg.css"><link rel="stylesheet" href="https://at.alicdn.com/t/c/font_5062027_214jv5x2fu2.css"><link rel="stylesheet" href="https://at.alicdn.com/t/c/font_5062401_ygp61888k8i.css"><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/Patrick.jpeg" alt="Whatever" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" target="_blank" rel="noopener" href="https://github.com/OolongFish/oolongfish.github.io">url</a></div><div class="navbar-end"><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories/">Categories</a></li><li><a href="/categories/Abstract-Algebra/">Abstract Algebra</a></li><li class="is-active"><a href="#" aria-current="page">Group Theory</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2025-12-16T14:34:41.000Z" title="2025/12/16 22:34:41">2025-12-16</time></span><span class="level-item">Updated&nbsp;<time dateTime="2025-12-16T14:55:01.791Z" title="2025/12/16 22:55:01">2025-12-16</time></span><span class="level-item"><a class="link-muted" href="/categories/Abstract-Algebra/">Abstract Algebra</a><span> / </span><a class="link-muted" href="/categories/Abstract-Algebra/Group-Theory/">Group Theory</a></span><span class="level-item">17 minutes read (About 2541 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2025/12/16/%E7%BE%A4%E7%BB%93%E6%9E%84/">群结构</a></p><div class="content"><p><strong>引言：</strong> 本文作者复习用，配套课本Herstein，参考资料是<a target="_blank" rel="noopener" href="https://www.jmilne.org/math/CourseNotes/gt.html">J.S.Milne Group Theory</a>,做了整理、补充和汉化，力求简洁而易于理解。有地方有问题或不理解可以邮箱告知，感谢！</p>
+<p>本节主要介绍一下确定群结构的工具: 直积、半直积以及Abel群结构定理.另外再介绍一些例子.</p>
+<h3 id="1-直积"><a href="#1-直积" class="headerlink" title="1.直积"></a>1.直积</h3><p>如果有两个群 $A,B$, 类似于集合和线性空间的积, 我们可以构造一个群:<br>$$A\times B\coloneqq{(a,b):a\in A,b\in B}<br>$$<br>定义其中的乘法:<br>$$(a_1,b_1)(a_2,b_2)&#x3D;(a_1a_2,b_1b_2)<br>$$<br>不难验证这就是一个群, 我们管这种直积叫<strong>外直积</strong>.</p>
+<p>这似乎只是凭空造出来了个和 $A,B$, 或者我们研究对象无关的群, 但如果 $A,B\leq G$, 我们可以考虑映射:<br>$$\phi : A\times B\to G \<br>(a,b)\mapsto ab<br>$$<br>如果这是个同构就能确定 $G$ 的结构了.<br>首先 $\phi$ 得是个满射, 也就是 $G&#x3D;Im\phi&#x3D;AB\coloneqq{ab:a\in A, b\in B}$. 于是更一般地, $AB$ 得是个群.</p>
+<p><strong>引理1.1</strong> 若 $G$ 是有限群, $A,B\leq G$, $AB$ 是群等价 $AB&#x3D;BA$</p>
+<p><strong>证明:</strong> $\implies$ $AB$ 是群则 $(a^{-1}b^{-1})^{-1}&#x3D;ba\in AB$, 于是 $BA\subset AB$, 于是 $BA&#x3D;AB$.</p>
+<p>$\impliedby$ $(ab)^{-1}&#x3D;b^{-1}a^{-1}\in BA&#x3D;AB$, $a_1b_1a_2b_2&#x3D;a_1(b_1a_2)b_2&#x3D;a_1a_3b_3b_2\in AB$.$\square$</p>
+<p>当然还有个问题亟待解决: $\phi$ 何以成为一个同态. 这就等价 $A,B$ 中元素交换(i.e. $a\in A,b\in B,ab&#x3D;ba$)</p>
+<p>还有个问题是为什么是单射: 这个留在下面的定理解决.</p>
+<p><strong>定理1.2</strong> $\phi$ 是 $A\times B\to G$ 的同构等价:</p>
+<p>$\quad$(a)$G&#x3D;AB$,<br><br>$\quad$(b)$A\cap B&#x3D;{1}$,<br><br>$\quad$(c)$A,B$ 中元素交换.</p>
+<p><strong>证明:</strong> $\implies$(a)(c)已经证明.若 $e\not&#x3D;x\in A\cap B$, 则 $x&#x3D;\phi(x,e)&#x3D;\phi(e,x)$, 不是单射.</p>
+<p>$\impliedby$(a)保证满, (c)保证同态. 若 $a_1b_1&#x3D;a_2b_2$, 则 $a_2^{-1}a_1&#x3D;b_2b_1^{-1}\in A\cap B$ ,是 $e$.$\square$</p>
+<p>可以导出另一个定理:</p>
+<p><strong>定理1.3</strong> $\phi$ 是 $A\times B\to G$ 的同构等价:</p>
+<p>$\quad$(a)$G&#x3D;AB$,<br><br>$\quad$(b)$A\cap B&#x3D;{1}$,<br><br>$\quad$(c)$A,B\trianglelefteq G$.</p>
+<p><strong>证明:</strong> $\implies$(a)(b)已知, 又 $A,B$ 交换, $(ab)A(ab)^{-1}&#x3D;b(aAa^{-1})b^{-1}&#x3D;bAb^{-1}&#x3D;A$</p>
+<p>$\impliedby$ 只用说明 $A,B$ 交换即可. $a\in A,b\in B,aba^{-1}\in B, bab^{-1}\in A$, 则 $aba^{-1}b^{-1}&#x3D;(aba^{-1})b^{-1}\in B$, 同时 $aba^{-1}b^{-1}&#x3D;a(ba^{-1})b^{-1}\in A$, 于是 $aba^{-1}b^{-1}&#x3D;e$.$\square$</p>
+<blockquote>
+<p>这个东西在Herstein P65出现过, 有点像Lie括号, 判断交换的利器.</p>
+</blockquote>
+<p>有了二维情形, 我们可以推广到 $n$ 维.</p>
+<p><strong>定理1.4</strong> $H_1,\cdots,H_k\leq H$, 则 $\phi$ 是同构等价:</p>
+<p>$\quad$(a)$H&#x3D;H_1\cdots H_k$,<br><br>$\quad$(b)对所有 $j$, $H_j\cap (H_1\cdots H_{j-1}H_{j+1}\cdots H_k)&#x3D;e$,<br><br>$\quad$(c)对所有 $j$, $H_j\trianglelefteq G$.</p>
+<blockquote>
+<p>证明和二维情形很像, 大概给出步骤: $\impliedby$ Step1. 用 $aba^{-1}b^{-1}$ 推出 $H_i,H_j$ 中元素交换, 于是 $\phi$ 是同态. Step2.由(b)知单, 由(c)知满. $\implies$ (a)由满射推出, (b)由单射推出, 由同态知 $H_i,H_j$ 交换得(c).</p>
+</blockquote>
+<h3 id="2-Abel群结构定理"><a href="#2-Abel群结构定理" class="headerlink" title="2.Abel群结构定理"></a>2.Abel群结构定理</h3><p>下面展现一下群直积的威力, 处理一下Abel群的结构.</p>
+<p><strong>定理2.1</strong> Abel群 $G$ 阶数为 $p_1^{\alpha_1}\cdots p_k^{\alpha_k}$, $p_i$ 是素数, 则 $G\approx P_1\times\cdots P_k$, 其中 $P_i$ 是 Sylow-$p_i$ 子群.</p>
+<p><strong>证明:</strong> 考虑映射<br>$$\phi:P_1\times\cdots\times P_k \to G\<br>(x_1,\cdots,x_k)\mapsto x_1\cdots x_k<br>$$<br>考虑定理1.4的条件:(c)由Abel群显然, (b)考虑相交元的阶数显然.<br><br>对于(a), 由于 $\phi$ 是单射(证明同(b)), $|P_1\cdots P_k|&#x3D;|Im\phi|&#x3D;|P_1\times\cdots\times P_k|&#x3D;p_1^{\alpha_1}\cdots p_k^{\alpha_k}&#x3D;|G|$. 于是(c)成立, 定理得证.$\square$</p>
+<p>于是想确定 $G$ 的结构, 只用确定 $P_i$ 的结构, 也就是 <strong>p-群</strong> 的结构.</p>
+<p><strong>定理2.2</strong> p-群可以写成若干循环群的直积.</p>
+<p><strong>证明:</strong> 设群为 $G$. 下面我们进行归纳构造, 因为群的阶数有限, 这个过程一定会结束.<br><br>首先找到 $G$ 中最大阶的元素 $q_1$, 阶数 $p^{\alpha_1}$. 如果 $\langle q_1\rangle&#x3D;G$, 构造结束.<br><br>假设已经构造了 $Q_r&#x3D;\langle q_1\rangle\times \cdots \langle q_r\rangle \leq G$, 阶分别为 $p^{\alpha_k}$, 并且 $\alpha_1\geq\cdots\geq\alpha_r$, $\overline{q_k}$ 是 $G&#x2F;Q_{k-1}$ 最大阶元, 且在其中阶数亦为 $p^{\alpha_k}$.<br><br>现在考虑 $G&#x2F;Q_r$ 中的最大阶元素 $\overline{m}$, 设 $o(\overline{m})&#x3D;p^t$, 则 $m^{p^t}&#x3D;q_{1}^{s_1p^{\beta_1}}\cdots q_{r}^{s_rp^{\beta_r}},(s_i,p)&#x3D;1$ 或 $s_i&#x3D;0,i&#x3D;1,\cdots,r$.<br><br>若 $s_r\not&#x3D;0$, 在群 $G&#x2F;Q_{r-1}$ 中考虑 $\overline{m}\not&#x3D;e$, 且 $\overline{m}^{p^t}&#x3D;\overline{q_r}^{s_rp^{\beta_r}}$, 进而 $(\overline{m}^{p^t})^{p^{\alpha_r-\beta_r}}$.由 $p^{\alpha_r}$ 的最大性知:<br>$$ \alpha_r\geq t+\alpha_r-\beta_r<br>$$<br>即 $\beta_r\geq t$, 结合 $s_r&#x3D;0$ 的情况得到 $p^t|s_rp^{\beta_r}$.<br><br>类似考虑 $G&#x2F;Q_k$, 得到 $p^t|s_{k+1}p^{\beta_{k+1}}$, 对所有 $k&#x3D;1,\cdots,r-1$ 成立.<br>考虑元素 $q_{r+1}&#x3D;mq_1^{-s_1p^{\beta_1-t}}\cdots q_r^{-s_rp^{\beta_r-t}}$, 则 $\overline{q_{r+1}}$ 是 $G&#x2F;Q_r$ 中阶最大元, $o(\overline{q_{r+1}})&#x3D;o(q_{r+1})&#x3D;t, t\leq \alpha_r.\square$</p>
+<blockquote>
+<p>Herstein上的方法也是这个意思, 但好像有点怪怪的. 我这省略了一般 $Q_k$, 可以思考一下这里应该怎么做.</p>
+</blockquote>
+<p>对p-群 $G$, 通过定理2.2我们给出了一个同构的循环群直积, 那这个分解是不是在一定程度上唯一?</p>
+<p><strong>定理2.3</strong> $o(q_k),o(r_l)$ 都大于1且都是 $p$ 的幂, $o(q_1)\geq\cdots o(q_s),o(r_1)\geq\cdots o(r_t)$, 则 $\langle q_1\rangle\times\cdots\langle q_s\rangle\approx\langle r_1\rangle\times\cdots\langle r_t\rangle$ 等价 $t&#x3D;s$ 且 $o(q_k)&#x3D;o(r_k).$</p>
+<p><strong>证明:</strong> $\impliedby$ 取 $\phi$ 为 $\phi(q_i)&#x3D;r_i$ 即可.<br><br>$\implies$ 对Abel群 $G$, 考虑子群<br>$$M_G(t)&#x3D;{x\in G:x^{p^t}&#x3D;e}<br>$$<br>定义 $|M_G(1)|$ 为 $G$ 的不变量.<br><br>由于 $Q&#x3D;\langle q_1\rangle\times\cdots\langle q_s\rangle$ 同构于 $R&#x3D;\langle r_1\rangle\times\cdots\langle r_t\rangle$, 于是对任意 $t$, $M_Q(t)\approx M_R(t)$.<br>取 $t&#x3D;1$, 得到 $M_Q(1)\approx M_R(1)$, 考虑阶数得 $p^s&#x3D;p^t$, i.e. $s&#x3D;t$.<br><br>记 $o(q_i)&#x3D;p^{h_i},o(r_i)&#x3D;p^{m_i}$,<br>反证, 由对称性, 不妨设 $h_k&gt;m_k$, 且 $h_l&#x3D;m_l$, 对所有 $l&lt;k$ 成立.<br><br>考虑 $M_Q(h_k)\approx M_R(h_k)$, 对这两个Abel群考虑 $T(G):&#x3D;{x\in G:x^{p^{m_k}}&#x3D;e}$, 则 $T(M_Q(h_k))\approx T(M_R(h_k))$ 考虑这两者的不变量, $T(M_Q(h_k))$ 的不小于 $k$, $T(M_R(h_k))$ 的小于 $k$, 矛盾.$\square$</p>
+<blockquote>
+<p>虽然不能看成相等, 但同构的群有相同的群论性质. Herstein上对于这个定理的表述让我不能接受.</p>
+</blockquote>
+<h3 id="3-半直积"><a href="#3-半直积" class="headerlink" title="3.半直积"></a>3.半直积</h3><p>这节只考虑外半直积.</p>
+<p>直积要求两个群都是正规子群, 如果只有一个也可以适当操作.<br><br>设 $A\trianglelefteq G,B\leq G, A\cap B&#x3D;{e}$, 考虑结构 $(a,b),a\in A, b\in B$, $\phi((a,b))&#x3D;ab$, 为了让 $\phi$ 是个同态, 我们得定义不同的乘法.<br>$$(a_1b_1)(a_2b_2)&#x3D;(a_1b_1a_2b_1^{-1})(b_1b_2)<br>$$<br>这样左边括号仍是 $A$ 中元素, 右边括号仍是 $B$ 中元素.<br></p>
+<blockquote>
+<p>要求 $A\cap B&#x3D;{e}$ 是为了 $\phi$ 是单射, 或者说表示唯一.</p>
+</blockquote>
+<p>定义乘法<br>$$(a_1,b_1)(a_2,b_2)&#x3D;(a_1b_1a_2b_1^{-1},b_1b_2)<br>$$<br>这样定义的群就叫做半直积, 记作 $A\rtimes B$ (开口对着正规子群).</p>
+<blockquote>
+<p>这是个群需要验证, 单位元和结合律都非常简单.</p>
+</blockquote>
+<p>也可以将其看作 $(a_1b_1)(a_2b_2)&#x3D;(a_1\theta(b_1)(a_2))(b_1b_2)$, $\theta$ 是 $B\to Aut(A)$ 的同态, 将这样的半直积记作 $A\rtimes_{\theta} B$, $\theta$ 相同 $A\rtimes_{\theta} B$ 定相同, 反之不然.</p>
+<blockquote>
+<p>$\theta$ 对确定的群 $G$ 是固定的: 因为由 $B$ 确定的共轭作用已经确定. 引入 $\theta$ 是因为我们不知道 $G$ 的结构, 所以可以讨论 $\theta$ 来研究 $G$.</p>
+</blockquote>
+<h3 id="4-应用"><a href="#4-应用" class="headerlink" title="4.应用"></a>4.应用</h3><p><strong>例4.1</strong> 讨论8阶群 $G$ 结构</p>
+<p><strong>解:</strong> 若是Abel群, 由Abel群结构定理, 有 $C_8,C_4\times C_2,C_2\times C_2\times C_2$三种.<br><br>若是非Abel群, 由于8阶群是p-群, 定有4阶正规子群 $P$.<br><br>若存在2阶元 $x$ 且 $x \notin P$, 则 $G&#x3D;P\rtimes_{\theta}\langle x\rangle$. 若 $\theta&#x3D;Id$, 由于4阶群一定是Abel群, $G$ 是Abel群, 矛盾.于是  $\theta(x)(p)&#x3D;p^{-1}$ (因为 $x(xpx^{-1})x^{-1}&#x3D;p$, 所以 $\theta^2&#x3D;e$), $P&#x3D;C_4$ 时 $G\approx D_4$, $P&#x3D;C_2\times C_2$ 时 $G$ 是Abel群.<br><br>若不存在2阶元 $x$, $x \notin P$. 记 $P&#x3D;{e,a,b,ab}$, 存在 $d\notin P,dP\not&#x3D; P$, 则 $d$ 是4阶元, $d^2\in P$, 设 $b&#x3D;d^2$. 若 $a$ 是2阶元, 则 $P’&#x3D;\langle d\rangle, a$ 回到上一种情况. 于是 $a$ 是 4 阶元, $a^2&#x3D;d^2$, 又 $dad^{-1}&#x3D;a^{-1}$ (否则是Abel群), 则 $G$ 同构Hamilton群(将 $a$ 映到 $i$, $d$ 映到 $j$).</p>
+<p>综上有五种情况: $C_8,C_2\times C_4, C_2\times C_2\times C_2, D_4, Q.$</p>
+<p><strong>例4.2</strong> 讨论12阶群 $G$ 结构</p>
+<p><strong>解:</strong> 若是Abel群, 由Abel群结构定理, 有 $C_{12},C_3\times C_4,C_2\times C_2\times C_3$三种.<br><br>若不是Abel群, 考虑 $P&#x3D;\langle p\rangle$ 是Sylow 3-子群.若 $P$ 正规, 考虑 $Q$ 是Sylow 4-子群, $G\approx P\rtimes Q$.<br><br>若 $Q\approx C_4,Q&#x3D;\langle q\rangle$, 只能 $\theta(q)(p)&#x3D;p^{-1}$(若否, $\theta(q)(p)&#x3D;p$, $\theta$ 平凡), 得到 $G\approx C_3\rtimes C_4\approx D_6$.<br><br>若 $Q\approx C_2\times C_2,Q&#x3D;{e,a,b,ab}$, 定有元素 $x\in Q$ 使得 $xpx^{-1}&#x3D;p^{-1}$, 否则平凡. 进一步, 有且仅有两个( $ypy^{-1}&#x3D;p\implies(xy)(p)(xy)^{-1}&#x3D;p^{-1}$). 设这两个为 $a,b$, 则 $Q\approx \langle ab\rangle\times \langle a\rangle$容易验证 $G\approx P\rtimes(\langle ab\rangle\times \langle a\rangle)\approx(P\rtimes\langle ab\rangle)\times\langle a\rangle\approx(C_3\rtimes C_2)\times C_2\approx S_3\times C_2$(第二个同构仅需按定义写出映射即可).<br><br>若 $P$ 不正规, 考虑左乘作用带来的映射<br>$$\phi: G\to Sym(G&#x2F;P)\approx S_4<br>$$<br>是个单射($x\in ker\phi\iff \forall t,xtP&#x3D;tP \iff \forall t,t^{-1}xt\in P \iff \forall t,x\in t^{-1}Pt$, 又两个3阶群相交为 ${e}$ 或 $P$).<br><br>于是 $G\approx\phi(G)$. 由 $P$ 不正规知 $G$ 中4个Sylow 3-子群, 8个3阶元, 于是 $\phi(G)$ 中也有8个3阶元, 又 $S_4$ 中3阶元只在 $A_4$ 中出现, 于是 $|\phi(G)\cap A_4|\geq 8$, 又 $\phi(G)\cap A_4\leq A_4$, 由Lagrange定理知 $A_4&#x3D;\phi(G)\approx G.$ </p>
+<p>综上有 $C_{12},C_3\times C_4,C_2\times C_2\times C_3, A_4,D_6,S_3\times C_2$ 6种.</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2025-11-24T14:22:28.000Z" title="2025/11/24 22:22:28">2025-11-24</time></span><span class="level-item">Updated&nbsp;<time dateTime="2025-11-25T02:00:55.899Z" title="2025/11/25 10:00:55">2025-11-25</time></span><span class="level-item"><a class="link-muted" href="/categories/Abstract-Algebra/">Abstract Algebra</a><span> / </span><a class="link-muted" href="/categories/Abstract-Algebra/Group-Theory/">Group Theory</a></span><span class="level-item">11 minutes read (About 1603 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2025/11/24/Sylow%E5%AE%9A%E7%90%86/">Sylow定理</a></p><div class="content"><p><strong>引言：</strong> 本文作者复习用，配套课本Herstein，参考资料是<a target="_blank" rel="noopener" href="https://www.jmilne.org/math/CourseNotes/gt.html">J.S.Milne Group Theory</a>,做了整理、补充和汉化，力求简洁而易于理解。有地方有问题或不理解可以邮箱告知，感谢！</p>
+<h3 id="1-双陪集"><a href="#1-双陪集" class="headerlink" title="1.双陪集"></a>1.双陪集</h3><p>前面介绍了在p-群和中心很有用的类方程, 接下来介绍一下Herstein中介绍的另一种手段, 后面在Sylow定理的证明中可以提供思路.</p>
+<blockquote>
+<p>事实上我一开始看的Milne讲义是第一版, 那时候他还没把这个方法写进讲义, 但新版里面有了, 但我还是参考Herstein的.</p>
+</blockquote>
+<p>$G$ 有子群 $A$, $B$, 考虑等价关系 $y$~$x$,即存在 $a\in A$, $b\in B$, $y&#x3D;axb$.</p>
+<p>这显然是个等价关系, 并且 $x$ 的等价类是 $AxB$.</p>
+<blockquote>
+<p>$x$ 的等价类是 $AxB$ 的子集, 而且 $AxB$ 是 $x$ 的等价类的子集. 这里 $AxB$ 就是所有形式如 $axb$ 的元素的集合.</p>
+</blockquote>
+<p>回忆一下一个计数法则.$A\leq G,B\leq G$, 有:<br>$$ |AB|&#x3D;\frac{|A||B|}{|A\bigcap B|}<br>$$ </p>
+<p>运用在 $|AxB|$ 上:<br>$$|AxB|&#x3D;|A(xBx^{-1})|&#x3D;\frac{|A||xBx^{-1}|}{|A\bigcap xBx^{-1}|}&#x3D;\frac{|A||B|}{|A\bigcap xBx^{-1}|}<br>$$</p>
+<p>于是由于这是个等价关系, 等价类就是个划分:<br>$$|G|&#x3D;\sum_{\text{for some }x}\frac{|A||B|}{|A\bigcap xBx^{-1}|}<br>$$</p>
+<blockquote>
+<p>看看这个和类方程多么像, 都是等价类划分! 这个在Herstein中叫做Another Counting Principle, 也叫双陪集.</p>
+</blockquote>
+<p>有了工具就用两种办法可以证明Sylow第二定理了!</p>
+<h3 id="2-Sylow-I"><a href="#2-Sylow-I" class="headerlink" title="2.Sylow I"></a>2.Sylow I</h3><p><strong>定理2.1(Sylow I)</strong> $G$ 是 $p^rm$ 阶群, $(m,p)&#x3D;1$, $p$ 素数. 则 $G$ 有 $p^r$ 阶群(Sylow p-子群).</p>
+<blockquote>
+<p>证明了这个, 由 <a href="https://oolongfish.github.io/2025/11/19/%E7%BE%A4%E4%BD%9C%E7%94%A8/">群作用</a> 定理2.3知任意 $p^t$ 阶子群都存在.</p>
+</blockquote>
+<p><strong>方法一(群作用):</strong> 考虑 $S$ 是 $G$ 所有 $p^r$ 阶<strong>子集</strong>的集合, 考虑群作用:<br>$$ G\times S\to S \<br>(g,X)\mapsto gX\<br>$$<br>也就是对 $X$ 中所有元素左乘上 $g$ 来得到一个新集合, 自然这个集合也是 $p^r$ 阶的.</p>
+<p>考虑这个群作用的方程:<br>$$|S|&#x3D;\sum_{\text{for some }X}[G:Stab(X)]\<br>$$</p>
+<p>类似于类方程的套路, 来看看 $|S|$ 的数论性质.</p>
+<p>$$|S|&#x3D;\binom{p^rm}{p^r}&#x3D;\prod_{k&#x3D;0}^{p^r-1}\frac{p^rm-k}{p^r-k}\<br>$$</p>
+<p>考虑每一项的 $p$ 的幂次, $p^rm-k$ 中 $p$ 的幂次就是 $k$ 的幂次, $p^r-k$ 中也是.</p>
+<p>故每一项都没有 $p$ 的幂次 $p\nmid |S|$, 于是存在 $X$ 使得 $p \nmid [G:Stab(X)]$, $p^r||Stab(X)|$</p>
+<p>取一个 $X$ 中元素 $x$, $Stab(X)$ 中元素 $h$, $ha\in X$, 这构成了 $Stab(X)$ 到 $X$ 的单射, 于是 $|Stab(X)|\leq|X|&#x3D;p^r$, 又 $p||Stab(X)|$, 故 $Stab(X)$ 就是Sylow p-子群.$\square$</p>
+<blockquote>
+<p>思考一下为什么要最后一段话, 我第一次看的时候想了一会.</p>
+</blockquote>
+<p><strong>方法二(Herstein):</strong> 对 $r$ 归纳, $r&#x3D;1$ 显然.若 $r-1$ 成立, 考虑类方程:<br>$$|G|&#x3D;|Z(G)|+\sum_{\text{for some }x}[G:Stab(x)]\<br>$$<br>若对求和号中的 $x$, $p^r\nmid |Stab(x)|$, 则 $p|[G:Stab(x)]$, 进而 $p||Z(G)|$.</p>
+<p>由Cauchy定理知, $Z(G)$ 中有 $p$ 阶元 $x$.</p>
+<p>考虑同态:<br>$$ \phi:G\to G&#x2F;\langle x \rangle\<br>g\mapsto g\langle x\rangle\<br>$$<br>又 $G&#x2F;\langle x\rangle$ 中有 $p^r$ 阶群 $\tilde{G}$, $\phi^{-1}(\tilde{G})$ 就是Sylow p-子群.$\square$</p>
+<blockquote>
+<p>尽管说了点废话, 但还是比Herstein简洁多了.</p>
+</blockquote>
+<h3 id="3-Sylow-II"><a href="#3-Sylow-II" class="headerlink" title="3.Sylow II"></a>3.Sylow II</h3><p><strong>引理3.1</strong> $P$ 是 $G$ 的Sylow p-子群, $Q$ 是 $G$ 的 p-子群, 且 $Q$ 正规化 $P$ (i.e. $q\in Q, qPq^{-1}&#x3D;P$), 则 $Q \leq P$<br><strong>证明:</strong> $Q\leq N(P)$, $P\trianglelefteq N(P)$, 于是 $PQ\leq N(P)$.<br>利用群同构第二定理:<br>$$Q&#x2F;P\cap Q \approx PQ&#x2F;Q\<br>$$<br>计算两边阶就证明了引理.$\square$</p>
+<blockquote>
+<p>其实这个证明不太容易想到</p>
+</blockquote>
+<p><strong>定理3.2(Sylow II)</strong> $|G|&#x3D;p^rm$, $(p,m)&#x3D;1$, 则:</p>
+<p>$\quad$ (a)Sylow p-子群都共轭;<br><br>$\quad$ (b) $s_p$ 是 $G$ 中Sylow p-子群的个数, 则 $s_p|m$, $p|s_p-1$;<br><br>$\quad$ (c)任意一个 $G$ 中p-子群都是某Sylow p-子群的子群.</p>
+<p><strong>证明一(群作用):</strong> 考虑Sylow p-子群的集合是 $S$, 考虑 $G$ 在 $S$ 上的共轭作用:<br>$$ G \times S \to S \<br>(g,X)\mapsto gXg^{-1}\<br>$$<br>$gXg^{-1}$ 也是 $p^r$ 阶子群, 所以有封闭性.<br>取其中一个轨道 $O$, 取一个 $P\in O$, 再让 $P$ 同上共轭作用在 $O$ 上($O$ 对共轭是封闭的), 会划分成许多小轨道, 记 $O_i, i&#x3D;1,\cdots n$. $|O|&#x3D;\sum_{i&#x3D;1}^{n}|O_i|&#x3D;\sum_{i&#x3D;1}^{n}[G:Stab(x_i)]$. 又 $|O_i|&#x3D;1\iff Stab(x_i)&#x3D;p^r$, 又由引理3.1知 $Stab(x_i)\leq P$, 于是有且仅有一个 $|O_i|&#x3D;1$, 其余 $i$ 有 $p||O_i|$, 于是 $p||O|-1$.</p>
+<p>如果有Sylow p-子群 $Q$ 不在 $O$ 中, 考虑 $Q$ 同上共轭作用在 $O$ 上, 则没有 $|O_i|&#x3D;1$ 的小轨道, 于是 $p||O|$, 矛盾! 于是 $O&#x3D;S$.</p>
+<p>于是 $s_p&#x3D;[G:Stab(X)]&#x3D;\frac{[G:X]}{[Stab(X):X]}&#x3D;\frac{m}{[Stab(X):X]}$, 于是 $s_p|m$, 这就证明了(a)(b). </p>
+<p>下面证明(c). 考虑p-子群 $P$ 同上作用在 $S$ 上, 考虑方程:<br>$$|S|&#x3D;\sum_{\text{for some }X}[P:Stab(X)]\<br>$$<br>由于 $p\nmid |S|$, 存在 $X$ 使得 $Stab(X)&#x3D;P$, 也就是 $P$ 正规化 $X$, 由引理3.1知 $P\leq X$.$\square$</p>
+<p><strong>证明二(双陪集):</strong> (a)考虑两个Sylow p-子群 $P$,$Q$, 考虑双陪集 $PxQ$:<br>$$|G|&#x3D;\sum_{\text{for some }x}|PxQ|&#x3D;\sum_{\text{for some }x}\frac{|P||Q|}{|P\cap xQx^{-1}|}\<br>$$<br>考虑 $p$ 的幂次, 定有 $x$ 使得 $|P\cap xQx^{-1}|&#x3D;p^r$, 也就是 $P&#x3D;xQx^{-1}$.</p>
+<p>(b) $s_p|m$ 证明同上. 对于 $p|s_p-1$, 考虑双陪集 $PxP$, 于是:<br>$$|G|&#x3D;\sum_{\text{for some }x}|PxP|&#x3D;\sum_{\text{for some }x}\frac{|P|^2}{|P\cap xPx^{-1}|}<br>$$<br>考虑平凡的 $|PxP|$, 也就是 $|P\cap xPx^{-1}|&#x3D;p^r$, 这些 $x\in N(P)$, 并且:<br>$$PxP&#x3D;P(xPx^{-1})x&#x3D;Px\<br>$$<br>于是这样的双陪集有 $[N(P):P]$ 个. 另外的双陪集阶都是 $p^{r+1}$ 的倍数, 于是:<br>$$|G|&#x3D;[N(P):P]|P|+p^{r+1}k\<br>$$<br>化简:<br>$$s_p&#x3D;[G:N(P)]&#x3D;1+\frac{p^rk}{|N(P)|}p<br>$$<br>于是命题得证(最右边是整数是从 $s_p$ 和 $1$ 是整数得出来的, 再分析 $p$ 的幂次!)</p>
+<p>(c)不需要引理3.1.考虑 $P$ 是某Sylow p-子群, $Q$ 是一个p-子群, 考虑 $PxQ$:<br>$$|G|&#x3D;\sum_{\text{for some }x}\frac{|P||Q|}{|xPx^{-1}\cap Q|}<br>$$<br>分析 $p$ 的幂次, 至少一个 $x$ 满足: $|Q|&#x3D;|xPx^{-1}\cap Q|$, 即 $Q\leq xPx^{-1}.\square$</p>
+<blockquote>
+<p>我大部分是自己回想的, 但还是看了书. 最后(c)的证明是我自己想的.用双陪集过程简洁不少, 可以好好体会一下这种手法.</p>
+</blockquote>
+<p>下次应该写的是群结构, 再后面就是环论了!</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2025-11-19T13:23:39.000Z" title="2025/11/19 21:23:39">2025-11-19</time></span><span class="level-item">Updated&nbsp;<time dateTime="2025-11-25T01:56:02.742Z" title="2025/11/25 09:56:02">2025-11-25</time></span><span class="level-item"><a class="link-muted" href="/categories/Abstract-Algebra/">Abstract Algebra</a><span> / </span><a class="link-muted" href="/categories/Abstract-Algebra/Group-Theory/">Group Theory</a></span><span class="level-item">10 minutes read (About 1546 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2025/11/19/%E7%BE%A4%E4%BD%9C%E7%94%A8/">群作用</a></p><div class="content"><p><strong>引言：</strong> 本文作者复习用，配套课本Herstein，参考资料是<a target="_blank" rel="noopener" href="https://www.jmilne.org/math/CourseNotes/gt.html">J.S.Milne Group Theory</a>,做了整理、补充和汉化，力求简洁而易于理解。有地方有问题或不理解可以邮箱告知，感谢！</p>
+<h3 id="1-基本定义"><a href="#1-基本定义" class="headerlink" title="1.基本定义"></a>1.基本定义</h3><p><strong>定义1.1.</strong> $X$ 是一个集合并且 $G$ 是一个群.一个 $G$ 到 $X$ 的<strong>左作用</strong>是指映射 $(g,x) \mapsto g.x:G \times X \to X$, 其满足:</p>
+<p>$\quad$ (a) $1.x&#x3D;x$, 对所有$x \in X$成立; <br><br>$\quad$ (b) $(g_1g_2).x&#x3D;g_1.(g_2.x)$, 对所有$g_1,g_2\in G, x\in X$成立.</p>
+<p>这里使用 $g.x$ 的符号原因是为了确定是<strong>作用</strong>还是<strong>群乘法</strong>.初学千万不要偷懒, 最后导致混淆!</p>
+<p>从定义可以看到, 群作用相当于从一个 $g\in G$, 我们定义了一个 $X$ 到 $X$ 的函数, 并且这个函数有逆(即 $g^{-1}\in G$ 定义的那个函数), 这个函数是 $X$ 上一个置换(因为有逆元所以是双射, 有限群到有限群的双射即一置换).也就是, <strong>如果群作用存在</strong>，那么我们可以从这个群作用中得到一个同态(这是由定义(a)(b)保证的):<br>$$g\mapsto g_L:G\to Sym(X)$$</p>
+<p>这里的 $Sym(X)$ 在Herstein中即 $A(X)$, 指 $X$ 的置换群.</p>
+<p>从上面的分析看到群作用和置换群有着密切联系, 事实上可以只用群作用定义证明下面的Cayley定理:</p>
+<p><strong>定理1.2(Cayley定理)</strong> 有限群 $G$ 都同构于某一对称群的子群.</p>
+<p><strong>证明:</strong> 考虑群作用 $G \times G \to G \quad (g_1,g_2)\mapsto g_1g_2$, 则对应有一同态 $$\phi: G \to Sym(G)\quad g\mapsto g_L$$<br>并且这是个单射 ( $x\in ker\phi$ 等价对所有 $g\in G, x.g&#x3D;xg&#x3D;g$).于是$$G\approx Im\phi$$ 又因为 $Im\phi \leq Sym(G)$, 这便证明了定理.$\square$</p>
+<p>一个简单的左乘就建立起了 $G$ 和一个对称群的联系！事实上, 当我们让 $G$ 作用在自己的某个左陪集集合 $G&#x2F;H$ 上时, 也可以利用 $[G:H]$ 的性质.</p>
+<p><strong>定理1.3(非单群判定)</strong> 若群 $G$ 有子群 $H\neq G$ 满足:<br>$$ |G|\nmid [G:H]!<br>$$ 则 $G$ 不是单群(有非平凡正规子群).</p>
+<p><strong>证明:</strong> 考虑群作用$G\times G&#x2F;H \to G&#x2F;H \quad(g,tH)\mapsto gtH$, 对应有同态<br>$$\phi:G\to Sym(G&#x2F;H)\approx S_{[G:H]}$$<br>若 $ker\phi &#x3D;{ e}$, $G\approx Im\phi\leq S_{[G:H]}$<br>但是 $|Im\phi|&#x3D;|G|\nmid |S_{[G:H]}|$, 矛盾！于是 $ker\phi \neq { e}$ .<br>又 $ker\phi \leq H\neq G$ ($ker\phi$中元素将 $H$ 左乘到 $H$), 于是 $H$ 是非平凡子群, $G$ 不是单群.$\square$</p>
+<p><strong>注记1.4</strong> 36阶群一定没有单群(如果你知道Sylow定理, 利用上面的结论就可以得到了)<br>下面这个问题与上面做法类似, 你也来试试吧!</p>
+<p><strong>例1.5</strong> 若 $H\leq G$ 且 $[G:H]$ 是 $|G|$ 最小的素因子, 证明: $H\unlhd G$ </p>
+<h3 id="2-共轭作用与群方程"><a href="#2-共轭作用与群方程" class="headerlink" title="2.共轭作用与群方程"></a>2.共轭作用与群方程</h3><p>前一种群作用可以与指数产生联系, 下面介绍另一种常用的群作用, 可以与中心产生联系.<br>$$G \times X \to X \quad (g,x)\mapsto gxg^{-1}<br>$$<br>前提自然是封闭</p>
+<p>考虑元素与元素之间的联系: 定义 $y$~$x$ 若存在 $g\in G$ 使得 $y&#x3D;g.x$, 显然这是个等价关系!<br>称这个等价关系定义的等价类叫做<strong>轨道</strong>.</p>
+<blockquote>
+<p>可以看到前面的平凡作用只有一条轨道!</p>
+</blockquote>
+<p>由于这是一个划分, 我们知道: $|X|&#x3D;\sum_{i&#x3D;1}^{n}|O_i|$</p>
+<p>下面来看看 $|O_i|$ 的性质.比如一条轨道 $O\subset X$, 有元素 $x\in O$, 则所有 $O$ 中元素都可以表示成 $g.x$ 的形式(看上面定义)</p>
+<p>于是有了个 $G$ 到 $O$ 的同态 $\phi$ : $\phi(g)&#x3D;g.x&#x3D;gxg^{-1}$</p>
+<p>则 $\phi$ 满, 且 $t\in ker\phi \iff txt^{-1}&#x3D;x\iff t\in N(x)$ (就是与x交换)</p>
+<p>于是:<br>$$ G&#x2F;ker\phi \approx O<br>$$<br>得到: $|O|&#x3D;|G|&#x2F;|ker\phi|$, 进一步: </p>
+<p>$$|X|&#x3D;\sum_{\text{for some }x}[G:N(x)]<br>$$</p>
+<p>对于一般的群作用, 我们把 $ker\phi$ 叫做 $Stab(x)$, 即G中作用在 $x$ 上仍是 $x$ 的元素.</p>
+<p>平凡的, 若 $x\in Z(G)$, 其轨道只有1元素, 把这些平凡的东西拉出来我们就知道:<br>$$ |X|&#x3D;|Z(G)|+\sum_{\text{for some }x}[G:N(x)], N(x)\not&#x3D; G<br>$$</p>
+<p>这就是<strong>类方程</strong>, 它能解决一堆p-群的问题</p>
+<p><strong>定理2.1</strong> p-群中心非平凡</p>
+<p><strong>证明:</strong> 考虑 $G$ 共轭作用在 $G$ 上的类方程:<br>$$|G|&#x3D;|Z(G)|+\sum_{\text{for some }x}[G:N(x)], N(x)\not&#x3D; G<br>$$<br>由 $p||G|, p|[G:N(x)]$ (G的子群阶只能是p的幂)<br>知: $p||Z(G)|$, 自然 $|Z(G)|\not&#x3D; 1\square$ </p>
+<p><strong>定理2.2(Cauchy)</strong> 若 $p||G|$, 则 $G$ 中有 $p$ 阶元</p>
+<p><strong>证明:</strong> 若 $p||Z(G)|$, 我们只需说明若Abel群 $P$ 的阶是 $p$ 的倍数则 $P$ 有 $p$ 阶元.</p>
+<p>若 $|P|&#x3D;p$ 结论自然成立.若有群使得命题不成立, 考察其中阶最小的一个.任取$e\not&#x3D;x\in P$, 若 $p|o(x)$ 则结论成立, 若否: $P&#x2F;\langle x \rangle$ 有个非单位 $p$ 阶元 $\bar{y}$, 则 $y\notin \langle x \rangle$, $y^p\in \langle x \rangle$.</p>
+<p>考虑 $(y^{o(x)})^p&#x3D;e$, 若 $y^{o(x)}&#x3D;e$, 则$\bar{y}^{o(x)}&#x3D;\bar{e}$, 由$(o(x),p)&#x3D;1$ 知 $\bar{y}&#x3D;\bar{e}$, 矛盾, 于是 $y^{o(x)}$ 满足条件.</p>
+<p>再看 $p\nmid |Z(G)|$, 考虑类方程, 则存在 $x$, $p\nmid [G:Stab(x)]$.<br>则 $p||Stab(x)|$, 于是 $Stab(x)$ 中有 $p$ 阶元 $y$, 结论得证.$\square$ </p>
+<p><strong>定理2.3</strong> 对任意 $r\leq n$, $p^n$ 阶群都有 $p^r$ 阶正规子群.</p>
+<p><strong>证明:</strong> 对 $n$ 归纳, $n&#x3D;1$ 是循环群显然成立.</p>
+<p>若小于 $n$ 都成立, 考察 $n$: $p^n$阶群 $G$ 中心非平凡, 由Cauchy定理知:<br>存在 $p$ 阶元 $x$ 属于中心. </p>
+<p>考察:</p>
+<p>$$ \phi: G \to G&#x2F; \langle x \rangle \<br>g\mapsto g\langle x \rangle<br>$$<br>由于 $G&#x2F; \langle x \rangle$ 中有 $p^{r-1}$ 阶正规子群 $\tilde{G}$, 不难验证 $\phi^{-1}(\tilde{G})$ 是正规子群(或者由第三群同构定理, Milne Thm1.47).</p>
+<p>最后 $|\phi^{-1}(\tilde{G})|&#x3D;|\tilde{G}||ker\phi|&#x3D;p^r \square$</p>
+<p>可以看到类方程在p-群中作用也是很大的.</p>
+<p>下次可能会写Sylow定理, 写这个太费神了, 不知道能不能坚持下去.</p>
+</div></article></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/icon.png" alt="OolongFish"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">OolongFish</p><p class="is-size-6 is-block">tianxuan1010@163.com</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Shanghai,China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives/"><p class="title">9</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories/"><p class="title">10</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags/"><p class="title">2</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/OolongFish" target="_blank" rel="me noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/OolongFish/"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Bilibili" href="https://space.bilibili.com/335832181"><i class="iconfont icon-bilibili"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Stack-Exchange" href="https://math.stackexchange.com/users/1676469/"><i class="iconfont icon-stack-exchange"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Zhihu" href="https://www.zhihu.com/people/oolongfish"><i class="iconfont icon-zhihu"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="RSS" href="https://oolongfish.github.io/atom.xml"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://bulma.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Bulma</span></span><span class="level-right"><span class="level-item tag">bulma.io</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/Abstract-Algebra/"><span class="level-start"><span class="level-item">Abstract Algebra</span></span><span class="level-end"><span class="level-item tag">4</span></span></a><ul><li><a class="level is-mobile" href="/categories/Abstract-Algebra/Group-Theory/"><span class="level-start"><span class="level-item">Group Theory</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/Abstract-Algebra/Ring-Theory/"><span class="level-start"><span class="level-item">Ring Theory</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/note/"><span class="level-start"><span class="level-item">note</span></span><span class="level-end"><span class="level-item tag">2</span></span></a><ul><li><a class="level is-mobile" href="/categories/note/cs/"><span class="level-start"><span class="level-item">cs</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul><li><a class="level is-mobile" href="/categories/note/cs/sicp/"><span class="level-start"><span class="level-item">sicp</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/note/math/"><span class="level-start"><span class="level-item">math</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/thought/"><span class="level-start"><span class="level-item">thought</span></span><span class="level-end"><span class="level-item tag">3</span></span></a><ul><li><a class="level is-mobile" href="/categories/thought/life/"><span class="level-start"><span class="level-item">life</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/thought/math/"><span class="level-start"><span class="level-item">math</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-05-27T04:43:00.000Z">2026-05-27</time></p><p class="title"><a href="/2026/05/27/2026%E5%AD%A6%E4%B9%A0SICP%E7%9A%84Scheme%E5%AE%9E%E7%8E%B0/">2026学习SICP的Scheme实现</a></p><p class="categories"><a href="/categories/note/">note</a> / <a href="/categories/note/cs/">cs</a> / <a href="/categories/note/cs/sicp/">sicp</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-05-26T04:53:00.000Z">2026-05-26</time></p><p class="title"><a href="/2026/05/26/%E5%85%B7%E4%BD%93%E5%92%8C%E6%8A%BD%E8%B1%A1/">具体和抽象</a></p><p class="categories"><a href="/categories/thought/">thought</a> / <a href="/categories/thought/life/">life</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-05-12T05:54:21.000Z">2026-05-12</time></p><p class="title"><a href="/2026/05/12/%E6%B4%BB%E5%8C%96%E8%83%BD%E4%B8%8E%E6%97%A0%E6%84%8F%E8%AF%86%E8%A1%8C%E4%B8%BA/">活化能与无意识行为</a></p><p class="categories"><a href="/categories/thought/">thought</a> / <a href="/categories/thought/life/">life</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-04-18T03:33:00.000Z">2026-04-18</time></p><p class="title"><a href="/2026/04/18/%E6%9C%AC%E7%A7%91%E6%95%B0%E5%AD%A6%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%BE%8B/">本科数学学习规律</a></p><p class="categories"><a href="/categories/thought/">thought</a> / <a href="/categories/thought/math/">math</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-03-16T12:02:30.000Z">2026-03-16</time></p><p class="title"><a href="/2026/03/16/Halmos-Naive-Set-Theory%E6%8C%87%E5%8C%97/">Halmos: Naive Set Theory指北</a></p><p class="categories"><a href="/categories/note/">note</a> / <a href="/categories/note/math/">math</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2026/05/"><span class="level-start"><span class="level-item">May 2026</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2026/04/"><span class="level-start"><span class="level-item">April 2026</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2026/03/"><span class="level-start"><span class="level-item">March 2026</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2025/12/"><span class="level-start"><span class="level-item">December 2025</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2025/11/"><span class="level-start"><span class="level-item">November 2025</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/Patrick.jpeg" alt="Whatever" height="28"></a><p class="is-size-7"><span>&copy; 2026 OolongFish</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">Visited by <span id="busuanzi_value_site_uv">0</span> users</span></p><p class="is-size-7">© 2019</p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/mhchem.min.js" defer></script><script>window.addEventListener("load", function() {
+            document.querySelectorAll('[role="article"] > .content').forEach(function(element) {
+                renderMathInElement(element);
+            });
+        });</script><script type="text/javascript" id="MathJax-script" async>MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      },
+      chtml: {
+        matchFontHeight: false
+      }
+    };</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script src="/js/pjax.js"></script><!--!--><!--!--><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script data-pjax src="/js/insight.js" defer></script><script data-pjax>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>

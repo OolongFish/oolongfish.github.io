@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Sylow定理 - Whatever</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="OolongFish"><meta name="msapplication-TileImage" content="/img/icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="OolongFish"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="引言： 本文作者复习用，配套课本Herstein，参考资料是J.S.Milne Group Theory,做了整理、补充和汉化，力求简洁而易于理解。有地方有问题或不理解可以邮箱告知，感谢！ 1.双陪集前面介绍了在p-群和中心很有用的类方程, 接下来介绍一下Herstein中介绍的另一种手段, 后面在Sylow定理的证明中可以提供思路.  事实上我一开始看的Milne讲义是第一版, 那时候他还没把这"><meta property="og:type" content="blog"><meta property="og:title" content="Sylow定理"><meta property="og:url" content="https://oolongfish.github.io/2025/11/24/Sylow%E5%AE%9A%E7%90%86/"><meta property="og:site_name" content="Whatever"><meta property="og:description" content="引言： 本文作者复习用，配套课本Herstein，参考资料是J.S.Milne Group Theory,做了整理、补充和汉化，力求简洁而易于理解。有地方有问题或不理解可以邮箱告知，感谢！ 1.双陪集前面介绍了在p-群和中心很有用的类方程, 接下来介绍一下Herstein中介绍的另一种手段, 后面在Sylow定理的证明中可以提供思路.  事实上我一开始看的Milne讲义是第一版, 那时候他还没把这"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://oolongfish.github.io/img/og_image.png"><meta property="article:published_time" content="2025-11-24T14:22:28.000Z"><meta property="article:modified_time" content="2025-11-25T02:00:55.899Z"><meta property="article:author" content="OolongFish"><meta property="article:tag" content="数学"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://oolongfish.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://oolongfish.github.io/2025/11/24/Sylow%E5%AE%9A%E7%90%86/"},"headline":"Sylow定理","image":["https://oolongfish.github.io/img/og_image.png"],"datePublished":"2025-11-24T14:22:28.000Z","dateModified":"2025-11-25T02:00:55.899Z","author":{"@type":"Person","name":"OolongFish"},"publisher":{"@type":"Organization","name":"Whatever","logo":{"@type":"ImageObject","url":"https://oolongfish.github.io/img/Patrick.jpeg"}},"description":"引言： 本文作者复习用，配套课本Herstein，参考资料是J.S.Milne Group Theory,做了整理、补充和汉化，力求简洁而易于理解。有地方有问题或不理解可以邮箱告知，感谢！ 1.双陪集前面介绍了在p-群和中心很有用的类方程, 接下来介绍一下Herstein中介绍的另一种手段, 后面在Sylow定理的证明中可以提供思路.  事实上我一开始看的Milne讲义是第一版, 那时候他还没把这"}</script><link rel="canonical" href="https://oolongfish.github.io/2025/11/24/Sylow%E5%AE%9A%E7%90%86/"><link rel="alternate" href="https://oolongfish.github.io/atom.xml" title="Whatever" type="application/atom+xml"><link rel="icon" href="/img/usagi.jpg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><link rel="stylesheet" href="https://at.alicdn.com/t/c/font_5061503_dwxtc3gbleg.css"><link rel="stylesheet" href="https://at.alicdn.com/t/c/font_5062027_214jv5x2fu2.css"><link rel="stylesheet" href="https://at.alicdn.com/t/c/font_5062401_ygp61888k8i.css"><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/Patrick.jpeg" alt="Whatever" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" target="_blank" rel="noopener" href="https://github.com/OolongFish/oolongfish.github.io">url</a></div><div class="navbar-end"><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2025-11-24T14:22:28.000Z" title="2025/11/24 22:22:28">2025-11-24</time></span><span class="level-item">Updated&nbsp;<time dateTime="2025-11-25T02:00:55.899Z" title="2025/11/25 10:00:55">2025-11-25</time></span><span class="level-item"><a class="link-muted" href="/categories/Abstract-Algebra/">Abstract Algebra</a><span> / </span><a class="link-muted" href="/categories/Abstract-Algebra/Group-Theory/">Group Theory</a></span><span class="level-item">11 minutes read (About 1603 words)</span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>&nbsp;visits</span></div></div><h1 class="title is-3 is-size-4-mobile">Sylow定理</h1><div class="content"><p><strong>引言：</strong> 本文作者复习用，配套课本Herstein，参考资料是<a target="_blank" rel="noopener" href="https://www.jmilne.org/math/CourseNotes/gt.html">J.S.Milne Group Theory</a>,做了整理、补充和汉化，力求简洁而易于理解。有地方有问题或不理解可以邮箱告知，感谢！</p>
+<h3 id="1-双陪集"><a href="#1-双陪集" class="headerlink" title="1.双陪集"></a>1.双陪集</h3><p>前面介绍了在p-群和中心很有用的类方程, 接下来介绍一下Herstein中介绍的另一种手段, 后面在Sylow定理的证明中可以提供思路.</p>
+<blockquote>
+<p>事实上我一开始看的Milne讲义是第一版, 那时候他还没把这个方法写进讲义, 但新版里面有了, 但我还是参考Herstein的.</p>
+</blockquote>
+<p>$G$ 有子群 $A$, $B$, 考虑等价关系 $y$~$x$,即存在 $a\in A$, $b\in B$, $y&#x3D;axb$.</p>
+<p>这显然是个等价关系, 并且 $x$ 的等价类是 $AxB$.</p>
+<blockquote>
+<p>$x$ 的等价类是 $AxB$ 的子集, 而且 $AxB$ 是 $x$ 的等价类的子集. 这里 $AxB$ 就是所有形式如 $axb$ 的元素的集合.</p>
+</blockquote>
+<p>回忆一下一个计数法则.$A\leq G,B\leq G$, 有:<br>$$ |AB|&#x3D;\frac{|A||B|}{|A\bigcap B|}<br>$$ </p>
+<p>运用在 $|AxB|$ 上:<br>$$|AxB|&#x3D;|A(xBx^{-1})|&#x3D;\frac{|A||xBx^{-1}|}{|A\bigcap xBx^{-1}|}&#x3D;\frac{|A||B|}{|A\bigcap xBx^{-1}|}<br>$$</p>
+<p>于是由于这是个等价关系, 等价类就是个划分:<br>$$|G|&#x3D;\sum_{\text{for some }x}\frac{|A||B|}{|A\bigcap xBx^{-1}|}<br>$$</p>
+<blockquote>
+<p>看看这个和类方程多么像, 都是等价类划分! 这个在Herstein中叫做Another Counting Principle, 也叫双陪集.</p>
+</blockquote>
+<p>有了工具就用两种办法可以证明Sylow第二定理了!</p>
+<h3 id="2-Sylow-I"><a href="#2-Sylow-I" class="headerlink" title="2.Sylow I"></a>2.Sylow I</h3><p><strong>定理2.1(Sylow I)</strong> $G$ 是 $p^rm$ 阶群, $(m,p)&#x3D;1$, $p$ 素数. 则 $G$ 有 $p^r$ 阶群(Sylow p-子群).</p>
+<blockquote>
+<p>证明了这个, 由 <a href="https://oolongfish.github.io/2025/11/19/%E7%BE%A4%E4%BD%9C%E7%94%A8/">群作用</a> 定理2.3知任意 $p^t$ 阶子群都存在.</p>
+</blockquote>
+<p><strong>方法一(群作用):</strong> 考虑 $S$ 是 $G$ 所有 $p^r$ 阶<strong>子集</strong>的集合, 考虑群作用:<br>$$ G\times S\to S \<br>(g,X)\mapsto gX\<br>$$<br>也就是对 $X$ 中所有元素左乘上 $g$ 来得到一个新集合, 自然这个集合也是 $p^r$ 阶的.</p>
+<p>考虑这个群作用的方程:<br>$$|S|&#x3D;\sum_{\text{for some }X}[G:Stab(X)]\<br>$$</p>
+<p>类似于类方程的套路, 来看看 $|S|$ 的数论性质.</p>
+<p>$$|S|&#x3D;\binom{p^rm}{p^r}&#x3D;\prod_{k&#x3D;0}^{p^r-1}\frac{p^rm-k}{p^r-k}\<br>$$</p>
+<p>考虑每一项的 $p$ 的幂次, $p^rm-k$ 中 $p$ 的幂次就是 $k$ 的幂次, $p^r-k$ 中也是.</p>
+<p>故每一项都没有 $p$ 的幂次 $p\nmid |S|$, 于是存在 $X$ 使得 $p \nmid [G:Stab(X)]$, $p^r||Stab(X)|$</p>
+<p>取一个 $X$ 中元素 $x$, $Stab(X)$ 中元素 $h$, $ha\in X$, 这构成了 $Stab(X)$ 到 $X$ 的单射, 于是 $|Stab(X)|\leq|X|&#x3D;p^r$, 又 $p||Stab(X)|$, 故 $Stab(X)$ 就是Sylow p-子群.$\square$</p>
+<blockquote>
+<p>思考一下为什么要最后一段话, 我第一次看的时候想了一会.</p>
+</blockquote>
+<p><strong>方法二(Herstein):</strong> 对 $r$ 归纳, $r&#x3D;1$ 显然.若 $r-1$ 成立, 考虑类方程:<br>$$|G|&#x3D;|Z(G)|+\sum_{\text{for some }x}[G:Stab(x)]\<br>$$<br>若对求和号中的 $x$, $p^r\nmid |Stab(x)|$, 则 $p|[G:Stab(x)]$, 进而 $p||Z(G)|$.</p>
+<p>由Cauchy定理知, $Z(G)$ 中有 $p$ 阶元 $x$.</p>
+<p>考虑同态:<br>$$ \phi:G\to G&#x2F;\langle x \rangle\<br>g\mapsto g\langle x\rangle\<br>$$<br>又 $G&#x2F;\langle x\rangle$ 中有 $p^r$ 阶群 $\tilde{G}$, $\phi^{-1}(\tilde{G})$ 就是Sylow p-子群.$\square$</p>
+<blockquote>
+<p>尽管说了点废话, 但还是比Herstein简洁多了.</p>
+</blockquote>
+<h3 id="3-Sylow-II"><a href="#3-Sylow-II" class="headerlink" title="3.Sylow II"></a>3.Sylow II</h3><p><strong>引理3.1</strong> $P$ 是 $G$ 的Sylow p-子群, $Q$ 是 $G$ 的 p-子群, 且 $Q$ 正规化 $P$ (i.e. $q\in Q, qPq^{-1}&#x3D;P$), 则 $Q \leq P$<br><strong>证明:</strong> $Q\leq N(P)$, $P\trianglelefteq N(P)$, 于是 $PQ\leq N(P)$.<br>利用群同构第二定理:<br>$$Q&#x2F;P\cap Q \approx PQ&#x2F;Q\<br>$$<br>计算两边阶就证明了引理.$\square$</p>
+<blockquote>
+<p>其实这个证明不太容易想到</p>
+</blockquote>
+<p><strong>定理3.2(Sylow II)</strong> $|G|&#x3D;p^rm$, $(p,m)&#x3D;1$, 则:</p>
+<p>$\quad$ (a)Sylow p-子群都共轭;<br><br>$\quad$ (b) $s_p$ 是 $G$ 中Sylow p-子群的个数, 则 $s_p|m$, $p|s_p-1$;<br><br>$\quad$ (c)任意一个 $G$ 中p-子群都是某Sylow p-子群的子群.</p>
+<p><strong>证明一(群作用):</strong> 考虑Sylow p-子群的集合是 $S$, 考虑 $G$ 在 $S$ 上的共轭作用:<br>$$ G \times S \to S \<br>(g,X)\mapsto gXg^{-1}\<br>$$<br>$gXg^{-1}$ 也是 $p^r$ 阶子群, 所以有封闭性.<br>取其中一个轨道 $O$, 取一个 $P\in O$, 再让 $P$ 同上共轭作用在 $O$ 上($O$ 对共轭是封闭的), 会划分成许多小轨道, 记 $O_i, i&#x3D;1,\cdots n$. $|O|&#x3D;\sum_{i&#x3D;1}^{n}|O_i|&#x3D;\sum_{i&#x3D;1}^{n}[G:Stab(x_i)]$. 又 $|O_i|&#x3D;1\iff Stab(x_i)&#x3D;p^r$, 又由引理3.1知 $Stab(x_i)\leq P$, 于是有且仅有一个 $|O_i|&#x3D;1$, 其余 $i$ 有 $p||O_i|$, 于是 $p||O|-1$.</p>
+<p>如果有Sylow p-子群 $Q$ 不在 $O$ 中, 考虑 $Q$ 同上共轭作用在 $O$ 上, 则没有 $|O_i|&#x3D;1$ 的小轨道, 于是 $p||O|$, 矛盾! 于是 $O&#x3D;S$.</p>
+<p>于是 $s_p&#x3D;[G:Stab(X)]&#x3D;\frac{[G:X]}{[Stab(X):X]}&#x3D;\frac{m}{[Stab(X):X]}$, 于是 $s_p|m$, 这就证明了(a)(b). </p>
+<p>下面证明(c). 考虑p-子群 $P$ 同上作用在 $S$ 上, 考虑方程:<br>$$|S|&#x3D;\sum_{\text{for some }X}[P:Stab(X)]\<br>$$<br>由于 $p\nmid |S|$, 存在 $X$ 使得 $Stab(X)&#x3D;P$, 也就是 $P$ 正规化 $X$, 由引理3.1知 $P\leq X$.$\square$</p>
+<p><strong>证明二(双陪集):</strong> (a)考虑两个Sylow p-子群 $P$,$Q$, 考虑双陪集 $PxQ$:<br>$$|G|&#x3D;\sum_{\text{for some }x}|PxQ|&#x3D;\sum_{\text{for some }x}\frac{|P||Q|}{|P\cap xQx^{-1}|}\<br>$$<br>考虑 $p$ 的幂次, 定有 $x$ 使得 $|P\cap xQx^{-1}|&#x3D;p^r$, 也就是 $P&#x3D;xQx^{-1}$.</p>
+<p>(b) $s_p|m$ 证明同上. 对于 $p|s_p-1$, 考虑双陪集 $PxP$, 于是:<br>$$|G|&#x3D;\sum_{\text{for some }x}|PxP|&#x3D;\sum_{\text{for some }x}\frac{|P|^2}{|P\cap xPx^{-1}|}<br>$$<br>考虑平凡的 $|PxP|$, 也就是 $|P\cap xPx^{-1}|&#x3D;p^r$, 这些 $x\in N(P)$, 并且:<br>$$PxP&#x3D;P(xPx^{-1})x&#x3D;Px\<br>$$<br>于是这样的双陪集有 $[N(P):P]$ 个. 另外的双陪集阶都是 $p^{r+1}$ 的倍数, 于是:<br>$$|G|&#x3D;[N(P):P]|P|+p^{r+1}k\<br>$$<br>化简:<br>$$s_p&#x3D;[G:N(P)]&#x3D;1+\frac{p^rk}{|N(P)|}p<br>$$<br>于是命题得证(最右边是整数是从 $s_p$ 和 $1$ 是整数得出来的, 再分析 $p$ 的幂次!)</p>
+<p>(c)不需要引理3.1.考虑 $P$ 是某Sylow p-子群, $Q$ 是一个p-子群, 考虑 $PxQ$:<br>$$|G|&#x3D;\sum_{\text{for some }x}\frac{|P||Q|}{|xPx^{-1}\cap Q|}<br>$$<br>分析 $p$ 的幂次, 至少一个 $x$ 满足: $|Q|&#x3D;|xPx^{-1}\cap Q|$, 即 $Q\leq xPx^{-1}.\square$</p>
+<blockquote>
+<p>我大部分是自己回想的, 但还是看了书. 最后(c)的证明是我自己想的.用双陪集过程简洁不少, 可以好好体会一下这种手法.</p>
+</blockquote>
+<p>下次应该写的是群结构, 再后面就是环论了!</p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>Sylow定理</p><p><a href="https://oolongfish.github.io/2025/11/24/Sylow定理/">https://oolongfish.github.io/2025/11/24/Sylow定理/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>OolongFish</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2025-11-24</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2025-11-25</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E6%95%B0%E5%AD%A6/">数学</a></div><div class="sharethis-inline-share-buttons"></div><script src="https://oolongfish.github.io/" defer></script></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2025/12/16/%E7%BE%A4%E7%BB%93%E6%9E%84/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">群结构</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2025/11/19/%E7%BE%A4%E4%BD%9C%E7%94%A8/"><span class="level-item">群作用</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/icon.png" alt="OolongFish"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">OolongFish</p><p class="is-size-6 is-block">tianxuan1010@163.com</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Shanghai,China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives/"><p class="title">9</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories/"><p class="title">10</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags/"><p class="title">2</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/OolongFish" target="_blank" rel="me noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/OolongFish/"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Bilibili" href="https://space.bilibili.com/335832181"><i class="iconfont icon-bilibili"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Stack-Exchange" href="https://math.stackexchange.com/users/1676469/"><i class="iconfont icon-stack-exchange"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Zhihu" href="https://www.zhihu.com/people/oolongfish"><i class="iconfont icon-zhihu"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="RSS" href="https://oolongfish.github.io/atom.xml"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://bulma.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Bulma</span></span><span class="level-right"><span class="level-item tag">bulma.io</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/Abstract-Algebra/"><span class="level-start"><span class="level-item">Abstract Algebra</span></span><span class="level-end"><span class="level-item tag">4</span></span></a><ul><li><a class="level is-mobile" href="/categories/Abstract-Algebra/Group-Theory/"><span class="level-start"><span class="level-item">Group Theory</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/Abstract-Algebra/Ring-Theory/"><span class="level-start"><span class="level-item">Ring Theory</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/note/"><span class="level-start"><span class="level-item">note</span></span><span class="level-end"><span class="level-item tag">2</span></span></a><ul><li><a class="level is-mobile" href="/categories/note/cs/"><span class="level-start"><span class="level-item">cs</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul><li><a class="level is-mobile" href="/categories/note/cs/sicp/"><span class="level-start"><span class="level-item">sicp</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/note/math/"><span class="level-start"><span class="level-item">math</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/thought/"><span class="level-start"><span class="level-item">thought</span></span><span class="level-end"><span class="level-item tag">3</span></span></a><ul><li><a class="level is-mobile" href="/categories/thought/life/"><span class="level-start"><span class="level-item">life</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/thought/math/"><span class="level-start"><span class="level-item">math</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-05-27T04:43:00.000Z">2026-05-27</time></p><p class="title"><a href="/2026/05/27/2026%E5%AD%A6%E4%B9%A0SICP%E7%9A%84Scheme%E5%AE%9E%E7%8E%B0/">2026学习SICP的Scheme实现</a></p><p class="categories"><a href="/categories/note/">note</a> / <a href="/categories/note/cs/">cs</a> / <a href="/categories/note/cs/sicp/">sicp</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-05-26T04:53:00.000Z">2026-05-26</time></p><p class="title"><a href="/2026/05/26/%E5%85%B7%E4%BD%93%E5%92%8C%E6%8A%BD%E8%B1%A1/">具体和抽象</a></p><p class="categories"><a href="/categories/thought/">thought</a> / <a href="/categories/thought/life/">life</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-05-12T05:54:21.000Z">2026-05-12</time></p><p class="title"><a href="/2026/05/12/%E6%B4%BB%E5%8C%96%E8%83%BD%E4%B8%8E%E6%97%A0%E6%84%8F%E8%AF%86%E8%A1%8C%E4%B8%BA/">活化能与无意识行为</a></p><p class="categories"><a href="/categories/thought/">thought</a> / <a href="/categories/thought/life/">life</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-04-18T03:33:00.000Z">2026-04-18</time></p><p class="title"><a href="/2026/04/18/%E6%9C%AC%E7%A7%91%E6%95%B0%E5%AD%A6%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%BE%8B/">本科数学学习规律</a></p><p class="categories"><a href="/categories/thought/">thought</a> / <a href="/categories/thought/math/">math</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-03-16T12:02:30.000Z">2026-03-16</time></p><p class="title"><a href="/2026/03/16/Halmos-Naive-Set-Theory%E6%8C%87%E5%8C%97/">Halmos: Naive Set Theory指北</a></p><p class="categories"><a href="/categories/note/">note</a> / <a href="/categories/note/math/">math</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2026/05/"><span class="level-start"><span class="level-item">May 2026</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2026/04/"><span class="level-start"><span class="level-item">April 2026</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2026/03/"><span class="level-start"><span class="level-item">March 2026</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2025/12/"><span class="level-start"><span class="level-item">December 2025</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2025/11/"><span class="level-start"><span class="level-item">November 2025</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/Patrick.jpeg" alt="Whatever" height="28"></a><p class="is-size-7"><span>&copy; 2026 OolongFish</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">Visited by <span id="busuanzi_value_site_uv">0</span> users</span></p><p class="is-size-7">© 2019</p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/mhchem.min.js" defer></script><script>window.addEventListener("load", function() {
+            document.querySelectorAll('[role="article"] > .content').forEach(function(element) {
+                renderMathInElement(element);
+            });
+        });</script><script type="text/javascript" id="MathJax-script" async>MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      },
+      chtml: {
+        matchFontHeight: false
+      }
+    };</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script src="/js/pjax.js"></script><!--!--><!--!--><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script data-pjax src="/js/insight.js" defer></script><script data-pjax>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
