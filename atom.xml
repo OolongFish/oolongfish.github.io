@@ -9,7 +9,26 @@
   <link href="https://oolongfish.github.io/atom.xml" rel="self"/>
   <rights>All rights reserved 2026, OolongFish</rights>
   <title>Whatever</title>
-  <updated>2026-05-30T06:08:10.016Z</updated>
+  <updated>2026-08-09T03:16:33.314Z</updated>
+  <entry>
+    <author>
+      <name>OolongFish</name>
+    </author>
+    <category term="Analysis" scheme="https://oolongfish.github.io/categories/Analysis/"/>
+    <category term="数学" scheme="https://oolongfish.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
+    <content>
+      <![CDATA[<p>在我初学实变函数的时候，实在不能理解为什么有人要研究性质<br>$$<br>\mathrm{Int};\overline{A}&#x3D;\emptyset<br>$$<br>以及它那个等价条件，我完全不能理解这是在干啥.</p><p>直到昨天，看Kolmogorov的教材：</p><blockquote><p>设 $A$ 与 $B$ 是度量空间 $R$ 中两个集合. 如果 $\overline{A} \supset B$，则称集合 $A$ 在 $B$ 中稠密.<br>$\cdots$<br>如果集合 $A$ 在任一球中不稠密，<strong>即</strong>如果在任一球 $B\subset R$ 中包含有另一与 $A$ 无任一公共点的球 $B’$，则称集合 $A$ 无处稠密.</p></blockquote><p>这个事情其实很简单：<br>集合 $A$ 在任一球中不稠密$\iff$不存在球 $B$ s.t. $\overline{A}\supset B$ $\iff$任一球 $B\setminus \overline{A}$ 是非空开集$\iff$在任一球 $B$ 中包含有另一与 $A$ 无任一公共点的球 $B’$</p><p>下面证明Baire Theorem的时候还有一句伟大的话：</p><blockquote><p>因为集合 $M_1$ 无处稠密，所以它在 $S_0$ 中不稠密.</p></blockquote><p>$S_0$ 是一个球.</p><p>当然我也在反思，为什么有人会把nowhere dense set翻译成疏集而不是无处稠密集？</p><p>这个问题也留给大家思考…</p>]]>
+    </content>
+    <id>https://oolongfish.github.io/2026/08/09/%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3%E7%96%8F%E9%9B%86%E5%91%A2/</id>
+    <link href="https://oolongfish.github.io/2026/08/09/%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3%E7%96%8F%E9%9B%86%E5%91%A2/"/>
+    <published>2026-08-09T03:16:00.000Z</published>
+    <summary>
+      <![CDATA[<p>在我初学实变函数的时候，实在不能理解为什么有人要研究性质<br>$$<br>\mathrm{Int};\overline{A}&#x3D;\emptyset<br>$$<br>以及它那个等价条件，我完全不能理解这是在干啥.</p>
+<p>直到昨天，看Kolmogorov的教]]>
+    </summary>
+    <title>怎么理解疏集呢</title>
+    <updated>2026-08-09T03:16:33.314Z</updated>
+  </entry>
   <entry>
     <author>
       <name>OolongFish</name>
@@ -18,7 +37,7 @@
     <category term="cs" scheme="https://oolongfish.github.io/categories/note/cs/"/>
     <category term="sicp" scheme="https://oolongfish.github.io/categories/note/cs/sicp/"/>
     <content>
-      <![CDATA[<p>声明：本文非AI创作</p><p>我学习SICP碰上的第一个大障碍就是不知道怎么运行lisp代码，尝试过VSCode、Emac等等，但最后感觉最好用的还是在Docker&#x2F;Termux上用Vim编辑（有语法高亮）然后再用Guile编译。</p><p>Guile安装：<br><code>apt-get install guile-3.0</code></p><p>Vim安装：<br><code>apt-get install vim</code></p><p>用Vim编辑的文件如果有.lisp后缀就自然有代码高亮，要编译直接<br><code>guile file.lisp</code></p><p>有一点不太好，就是有些Scheme上的表达Guile未必有。或者是手动一个一个替换，或者是在开头用define替换，这样下面就不用修改了。</p><p>我现在碰到的有这些：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(define (runtime) (get-internal-real-time))</span><br><span class="line">(define nil &#x27;()); or </span><br><span class="line">(define nil (list))</span><br><span class="line">(define get symbol-property)</span><br><span class="line">(define put set-symbol-property!)</span><br></pre></td></tr></table></figure><p>还有些差别不能通过这个来解决，列出源代码（注释是华章版所在页数和MIT官网给的pdf页数）和修改</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(get &#x27;real-part &#x27;rectangular real-part);Huazhang P125,pdf P248</span><br><span class="line">(get ‘real-part &#x27;(rectangular) real-part); modified</span><br></pre></td></tr></table></figure><p align="right">2026-05-27</p>]]>
+      <![CDATA[<p>声明：本文非AI创作</p><p>我学习SICP碰上的第一个大障碍就是不知道怎么运行lisp代码，尝试过VSCode、Emac等等，但最后感觉最好用的还是在Docker&#x2F;Termux上用Vim编辑（有语法高亮）然后再用Guile编译。</p><p>Guile安装：<br><code>apt-get install guile-3.0</code></p><p>Vim安装：<br><code>apt-get install vim</code></p><p>用Vim编辑的文件如果有.lisp后缀就自然有代码高亮，要编译直接<br><code>guile file.lisp</code></p><p>有一点不太好，就是有些Scheme上的表达Guile未必有。或者是手动一个一个替换，或者是在开头用define替换，这样下面就不用修改了。</p><p>我现在碰到的有这些：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(define (runtime) (get-internal-real-time))</span><br><span class="line">(define nil &#x27;()); or </span><br><span class="line">(define nil (list))</span><br><span class="line">(define get symbol-property)</span><br><span class="line">(define put set-symbol-property!)</span><br></pre></td></tr></table></figure><p>还有些差别不能通过这个来解决，列出源代码（注释是华章版所在页数和MIT官网给的pdf页数）和修改</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(get &#x27;real-part &#x27;rectangular real-part);Huazhang P125,pdf P248</span><br><span class="line">(get ‘real-part &#x27;(rectangular) real-part); modified</span><br></pre></td></tr></table></figure><p>管不了parrallel-execute</p><p align="right">2026-05-27</p>]]>
     </content>
     <id>https://oolongfish.github.io/2026/05/27/2026%E5%AD%A6%E4%B9%A0SICP%E7%9A%84Scheme%E5%AE%9E%E7%8E%B0/</id>
     <link href="https://oolongfish.github.io/2026/05/27/2026%E5%AD%A6%E4%B9%A0SICP%E7%9A%84Scheme%E5%AE%9E%E7%8E%B0/"/>
@@ -29,7 +48,7 @@
 <p>Guile安]]>
     </summary>
     <title>2026学习SICP的Scheme实现</title>
-    <updated>2026-05-30T06:08:10.016Z</updated>
+    <updated>2026-08-05T03:05:28.037Z</updated>
   </entry>
   <entry>
     <author>
