@@ -9,7 +9,7 @@
   <link href="https://oolongfish.github.io/atom.xml" rel="self"/>
   <rights>All rights reserved 2026, OolongFish</rights>
   <title>Whatever</title>
-  <updated>2026-08-09T03:16:33.314Z</updated>
+  <updated>2026-08-09T03:18:27.303Z</updated>
   <entry>
     <author>
       <name>OolongFish</name>
@@ -17,17 +17,17 @@
     <category term="Analysis" scheme="https://oolongfish.github.io/categories/Analysis/"/>
     <category term="数学" scheme="https://oolongfish.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
     <content>
-      <![CDATA[<p>在我初学实变函数的时候，实在不能理解为什么有人要研究性质<br>$$<br>\mathrm{Int};\overline{A}&#x3D;\emptyset<br>$$<br>以及它那个等价条件，我完全不能理解这是在干啥.</p><p>直到昨天，看Kolmogorov的教材：</p><blockquote><p>设 $A$ 与 $B$ 是度量空间 $R$ 中两个集合. 如果 $\overline{A} \supset B$，则称集合 $A$ 在 $B$ 中稠密.<br>$\cdots$<br>如果集合 $A$ 在任一球中不稠密，<strong>即</strong>如果在任一球 $B\subset R$ 中包含有另一与 $A$ 无任一公共点的球 $B’$，则称集合 $A$ 无处稠密.</p></blockquote><p>这个事情其实很简单：<br>集合 $A$ 在任一球中不稠密$\iff$不存在球 $B$ s.t. $\overline{A}\supset B$ $\iff$任一球 $B\setminus \overline{A}$ 是非空开集$\iff$在任一球 $B$ 中包含有另一与 $A$ 无任一公共点的球 $B’$</p><p>下面证明Baire Theorem的时候还有一句伟大的话：</p><blockquote><p>因为集合 $M_1$ 无处稠密，所以它在 $S_0$ 中不稠密.</p></blockquote><p>$S_0$ 是一个球.</p><p>当然我也在反思，为什么有人会把nowhere dense set翻译成疏集而不是无处稠密集？</p><p>这个问题也留给大家思考…</p>]]>
+      <![CDATA[<p>在我初学实变函数的时候，实在不能理解为什么有人要研究性质<br>$$<br>\mathrm{Int}\overline{A}&#x3D;\emptyset<br>$$<br>以及它那个等价条件，我完全不能理解这是在干啥.</p><p>直到昨天，看Kolmogorov的教材：</p><blockquote><p>设 $A$ 与 $B$ 是度量空间 $R$ 中两个集合. 如果 $\overline{A} \supset B$，则称集合 $A$ 在 $B$ 中稠密.<br>$\cdots$<br>如果集合 $A$ 在任一球中不稠密，<strong>即</strong>如果在任一球 $B\subset R$ 中包含有另一与 $A$ 无任一公共点的球 $B’$，则称集合 $A$ 无处稠密.</p></blockquote><p>这个事情其实很简单：<br>集合 $A$ 在任一球中不稠密$\iff$不存在球 $B$ s.t. $\overline{A}\supset B$ $\iff$任一球 $B\setminus \overline{A}$ 是非空开集$\iff$在任一球 $B$ 中包含有另一与 $A$ 无任一公共点的球 $B’$</p><p>下面证明Baire Theorem的时候还有一句伟大的话：</p><blockquote><p>因为集合 $M_1$ 无处稠密，所以它在 $S_0$ 中不稠密.</p></blockquote><p>$S_0$ 是一个球.</p><p>当然我也在反思，为什么有人会把nowhere dense set翻译成疏集而不是无处稠密集？</p><p>这个问题也留给大家思考…</p>]]>
     </content>
     <id>https://oolongfish.github.io/2026/08/09/%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3%E7%96%8F%E9%9B%86%E5%91%A2/</id>
     <link href="https://oolongfish.github.io/2026/08/09/%E6%80%8E%E4%B9%88%E7%90%86%E8%A7%A3%E7%96%8F%E9%9B%86%E5%91%A2/"/>
     <published>2026-08-09T03:16:00.000Z</published>
     <summary>
-      <![CDATA[<p>在我初学实变函数的时候，实在不能理解为什么有人要研究性质<br>$$<br>\mathrm{Int};\overline{A}&#x3D;\emptyset<br>$$<br>以及它那个等价条件，我完全不能理解这是在干啥.</p>
-<p>直到昨天，看Kolmogorov的教]]>
+      <![CDATA[<p>在我初学实变函数的时候，实在不能理解为什么有人要研究性质<br>$$<br>\mathrm{Int}\overline{A}&#x3D;\emptyset<br>$$<br>以及它那个等价条件，我完全不能理解这是在干啥.</p>
+<p>直到昨天，看Kolmogorov的教材]]>
     </summary>
     <title>怎么理解疏集呢</title>
-    <updated>2026-08-09T03:16:33.314Z</updated>
+    <updated>2026-08-09T03:18:27.303Z</updated>
   </entry>
   <entry>
     <author>
