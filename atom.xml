@@ -9,7 +9,26 @@
   <link href="https://oolongfish.github.io/atom.xml" rel="self"/>
   <rights>All rights reserved 2026, OolongFish</rights>
   <title>Whatever</title>
-  <updated>2026-09-30T02:58:29.835Z</updated>
+  <updated>2026-10-18T06:26:57.398Z</updated>
+  <entry>
+    <author>
+      <name>OolongFish</name>
+    </author>
+    <category term="note" scheme="https://oolongfish.github.io/categories/note/"/>
+    <category term="cs" scheme="https://oolongfish.github.io/categories/note/cs/"/>
+    <content>
+      <![CDATA[<p><a href="https://wiki.termux.com/wiki/Python">Termux文档</a>中提供了部分Python库的安装方式.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pkg install python-numpy</span><br><span class="line">pkg install matplotlib</span><br><span class="line">pkg install python-scipy</span><br></pre></td></tr></table></figure><blockquote><p>上面最后一句文档中没有, 是GPT告诉我的.</p></blockquote><p>再安装几个必要的包 (至少我需要) :</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install meson-python</span><br><span class="line">pip install Cython</span><br></pre></td></tr></table></figure><p>最后运行:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install scikit-learn --no-build-isolation</span><br></pre></td></tr></table></figure><blockquote><p>参考 <a href="https://github.com/termux/termux-packages/discussions/19950">https://github.com/termux/termux-packages/discussions/19950</a></p></blockquote>]]>
+    </content>
+    <id>https://oolongfish.github.io/2026/10/18/Termux%E5%AE%89%E8%A3%85Python%E5%BA%93/</id>
+    <link href="https://oolongfish.github.io/2026/10/18/Termux%E5%AE%89%E8%A3%85Python%E5%BA%93/"/>
+    <published>2026-10-18T06:26:00.000Z</published>
+    <summary>
+      <![CDATA[<p><a href="https://wiki.termux.com/wiki/Python">Termux文档</a>中提供了部分Python库的安装方式.</p>
+<figure class="highlight bash"><table><tr><td class="gu]]>
+    </summary>
+    <title>Termux安装Python库</title>
+    <updated>2026-10-18T06:26:57.398Z</updated>
+  </entry>
   <entry>
     <author>
       <name>OolongFish</name>
