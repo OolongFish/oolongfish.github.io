@@ -204,6 +204,26 @@ $$<br]]>
     <author>
       <name>OolongFish</name>
     </author>
+    <category term="note" scheme="https://oolongfish.github.io/categories/note/"/>
+    <category term="math" scheme="https://oolongfish.github.io/categories/note/math/"/>
+    <category term="数学" scheme="https://oolongfish.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
+    <content>
+      <![CDATA[<p>这本书写于1960, 算是非常古老的教材了. 因为UTM的大名和知乎上一些人的推荐用这个学习了一下. 最开始是想了解 Russell Paradox 怎么解决, 其实就是 there is no universe.</p><p>这本书大概大一下开始看, 后面复习期末全忘光了, 寒假再看的时候因为看不懂也忘光了, 这学期可能学习方法不一样了一点加上前面的基础算是比较快地看懂了.</p><blockquote><p>大概就是不能把数学学习内容的无限增长当作目标, 而是想看了去看一点, 给自己设定极其慢的目标, 比如一本小书看一个学期, 看太快反而会一口气全吐出来.</p></blockquote><p>这本书 Section1-10 大概是一些基础知识, 11-13 介绍自然数, 15-18 介绍 Axiom of Choice, Zorn’s Lemma, Well-Ordering Theorem. 19-21 是 Ordinal Number, 22-25 是 Cardinal Number.</p><p>1-10 就是集合论思维的拷打, 一方面是所有数学处理的对象本质上都是集合, 比如function, number, etc. 还有就是为什么一个 <strong>大的集合</strong> 存在, 这些可能由 Axiom of Powers 或者 Axiom of Infinity 来保证.</p><p>11-13 最重要的技术就是 principle of mathematical induction 和 Recursion Theorem 的证明. 前者证明集合 S 满足归纳条件来说明 S 是自然数集, 也就是所有自然数都满足条件. 后者先取一个很大的集合然后做交最后能得到一个满足条件的函数.</p><blockquote><p>反证是避开处理 <strong>所有对象</strong> 的巧思.</p></blockquote><p>15-18 再重要不过, 注意几点. 1, Axiom of Choice 必须对一个已经存在的 family 来证明不是空集. 比如说明了对每个 $x$ 存在一个集合 $A_x$ 不能说明存在一个函数满足 $f(x)\in A_x$. 2, 注意 Zorn’s Lemma 的证明技巧, 先转换成 $s(x)$ 的集合又转换成其 chain 的集合, 再构造 tower , 再说明 tower 是个 chain, 最后说明封闭. 3, 注意 Zorn’s Lemma 怎么用的, 例子就是 Well-Ordering Theorem 的证明, 试着自己证明一下基的存在性.</p><p>最后两部分比较重要的点就是 <a href="https://proofwiki.org/wiki/Fundamental_Theorem_of_Well-Ordering">Fundamental Theorem of Well-Ordering</a> 和 Ordinal Number similar iff equal. 我不太能理解 Transfinite Recursion Theorem 在干嘛, 而且后面似乎也没啥用, 比如 Fundamental Theorem of Well-Ordering 的证明就可以参考 Proofwiki.</p><p>后面感觉有很多东西没说清楚, 比如 P77 页那个以此类推, 我觉得初学者不太好理解. 还有 P84 $\omega2\not=\omega$ 的解释我也看不懂, 为啥不直说这里的 $\omega2$ 和 P76 页说的那个 similar 于是不是 $\omega$. 最不能让我理解的是 Axiom of Substitution 给了个错的版本, 这个版本和 <a href="https://proofwiki.org/wiki/Axiom:Axiom_of_Abstraction">Axiom of Abstraction</a> 很像, 感觉能轻易造出 universe, 关键他后面用的是<a href="https://proofwiki.org/wiki/Category:Axiom_of_Replacement">正确的</a>, 真是匪夷所思.</p><p>总而言之这本书如果有所去取并且对照着 Proofwiki 看是本好书, 可是没人给我个指北, 踩了点坑.</p>]]>
+    </content>
+    <id>https://oolongfish.github.io/2026/03/16/Halmos-Naive-Set-Theory%E6%8C%87%E5%8C%97/</id>
+    <link href="https://oolongfish.github.io/2026/03/16/Halmos-Naive-Set-Theory%E6%8C%87%E5%8C%97/"/>
+    <published>2026-03-16T12:02:30.000Z</published>
+    <summary>
+      <![CDATA[<p>这本书写于1960, 算是非常古老的教材了. 因为UTM的大名和知乎上一些人的推荐用这个学习了一下. 最开始是想了解 Russell Paradox 怎么解决, 其实就是 there is no universe.</p>
+<p>这本书大概大一下开始看, 后面复习期末全忘光]]>
+    </summary>
+    <title>Halmos：Naive Set Theory指北</title>
+    <updated>2026-11-23T11:40:55.177Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>OolongFish</name>
+    </author>
     <category term="Abstract Algebra" scheme="https://oolongfish.github.io/categories/Abstract-Algebra/"/>
     <category term="Ring Theory" scheme="https://oolongfish.github.io/categories/Abstract-Algebra/Ring-Theory/"/>
     <category term="数学" scheme="https://oolongfish.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
